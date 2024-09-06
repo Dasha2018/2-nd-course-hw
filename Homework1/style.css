@@ -13,6 +13,7 @@
   }
 
   .top {
+    padding-left: 120px;
     height: 800px;
     background: url(pict/Topstar.svg) no-repeat top 0px right 0px,
     url(pict/Star4.svg) no-repeat 80% 90%, url(pict/Star5.svg) no-repeat 70% 80%,
@@ -47,7 +48,7 @@
     color: #202027;
   }
 
-  .top__paragraf_span {
+  .top__paragraf-span {
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -71,6 +72,7 @@
     background-color: #202027;
     color: #FFFFFF;
     margin-top: 48px;
+    margin-left: 1px;
   }
 
   .top__button:hover {
@@ -78,8 +80,7 @@
     background-color: transparent;
   }
 
-  .creeping__line {
-    
+  .creepingline {
     gap: 10px;
     border: 1px;
     opacity: 0px;
@@ -90,7 +91,7 @@
     padding: 27px 49px 27px 49px;
   }
 
-  .creeping__line_paragraf {
+  .creepingline-paragraf {
     font-size: 30px;
     font-weight: 700;
     line-height: 33px;
@@ -98,7 +99,7 @@
     text-align: left;
     color: #202027;
   }
-  .creeping__line_svg {
+  .creepingline-svg {
     width: 36px;
     height: 36px;
     gap: 0px;
@@ -130,7 +131,7 @@
         padding-bottom: 72px;
     }
 
-  .game__title {
+  .game__about-title {
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
@@ -138,7 +139,7 @@
     color: #FFFFFF;
   }
 
-  .game__paragraf {
+  .game__about-paragraf {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -148,7 +149,7 @@
 
  
 
-  .game__content_block1 {
+  .game__content-block1 {
     width: 378px;
     height: 473px;
     gap: 0px;
@@ -161,12 +162,12 @@
     
   }
 
-  .game__content_block1:hover {
+  .game__content-block1:hover {
     transform: scale(1.07);
   }
 
 
-  .game__content_block2 {
+  .game__content-block2 {
     width: 378px;
     height: 512px;
     gap: 0px;
@@ -178,11 +179,11 @@
     transition:  0.5s;
   }
 
-  .game__content_block2:hover{
+  .game__content-block2:hover{
     transform: scale(1.07);
   }
 
-  .game__content_block3 {
+  .game__content-block3 {
     width: 378px;
     height: 551px;
     gap: 0px;
@@ -193,11 +194,11 @@
     transition:  0.5s;
   }
 
-  .game__content_block3:hover {
+  .game__content-block3:hover {
     transform: scale(1.07);
   }
 
-  .game__content_block4 {
+  .game__content-block4 {
     width: 378px;
     height: 512px;
     gap: 0px;
@@ -208,11 +209,11 @@
     transition:  0.5s;
   }
 
-  .game__content_block4:hover {
+  .game__content-block4:hover {
     transform: scale(1.07);
   }
   
-  .game__content_img {
+  .game__content-img {
     width: 378px;
     height: 314px;
     gap: 0px;
@@ -220,14 +221,14 @@
     opacity: 0px;
   }
 
-  .game__content_text {
+  .game__content-text {
     padding: 32px 32px 36px 32px;
     gap: 16px;
     border-radius: 30px;
     opacity: 0px;
   }
 
-  .game__content_paragraf {
+  .game__content-paragraf {
     width: 108px;
     padding: 8px 16px 10px 16px;
     gap: 0px;
@@ -245,7 +246,7 @@
         text-decoration: none;
     }
 
-  .game__content_title {
+  .game__content-title {
     font-size: 32px;
     font-weight: 700;
     line-height: 39px;
@@ -264,7 +265,7 @@
     justify-content: center;
   }
 
-  .footer__title {
+  .footer-title {
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
