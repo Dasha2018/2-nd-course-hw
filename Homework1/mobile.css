@@ -157,6 +157,10 @@
         margin-top: 32px;
       }
 
+      .minigame{
+        display: none;
+      }
+
       .footer {
        height: 100px;
       }
