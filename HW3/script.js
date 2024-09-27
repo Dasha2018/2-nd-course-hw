@@ -72,12 +72,12 @@ switch (monthNumber) {
         console.log('Осень');
         break;
 
-    case '12':
-        console.log('Зима');
-        break;
-        default:
-            console.log('ввели что-то не то');
-}
+        case '12':
+            console.log('Зима');
+            break;
+            default:
+                console.log('ввели что-то не то');
+    }
 
 
 let n = prompt("Пожалуйста, введите любое число");
