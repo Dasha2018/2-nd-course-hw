@@ -13,14 +13,15 @@
   }
 
   .top {
-    padding-left: 120px;
+    left: 120px;
     height: 800px;
     background: url(pict/Topstar.svg) no-repeat top 0px right 0px,
     url(pict/Star4.svg) no-repeat 80% 90%, url(pict/Star5.svg) no-repeat 70% 80%,
     url(pict/Star2.svg) no-repeat 5% 12%, url(pict/Star3.svg) no-repeat 11% 9%, 
     url(pict/Top.jpg) center/cover no-repeat;
-  }
-
+  } 
+   
+  
   .top__content {
     width: 769px;
     height: 244px;
@@ -73,6 +74,7 @@
     color: #FFFFFF;
     margin-top: 48px;
     margin-left: 1px;
+    
   }
 
   .top__button:hover {
@@ -108,9 +110,13 @@
 
   .game {
     padding-bottom: 144px;
-    background:   url(pict/Star1.svg) no-repeat 100% 10%, url(pict/Star8.svg) no-repeat 95% 96%,
-    url(pict/Star10.svg) no-repeat 88% 97%, url(pict/Star11.svg) no-repeat 4% 50%,
-    url(pict/Star12.svg) no-repeat 5% 55%, #202027;
+    background: url(pict/Star1.svg) no-repeat 100% 2%, 
+    url(pict/Star6.svg) no-repeat 95% 32%,
+    url(pict/Star7.svg) no-repeat 88% 31%,
+    url(pict/Star8.svg) no-repeat 96% 98%,
+    url(pict/Star10.svg) no-repeat 88% 99%, 
+    url(pict/Star11.svg) no-repeat 3% 16%,
+    url(pict/Star12.svg) no-repeat 5% 17%, #202027;
   }
 
   .game__content{
@@ -137,6 +143,12 @@
     line-height: 78px;
     text-align: left;
     color: #FFFFFF;
+  }
+  .game__about-titlemobile {
+    display: none;
+  }
+  .game__mobile {
+    display: none;
   }
 
   .game__about-paragraf {
@@ -255,9 +267,86 @@
     margin-top: 16px;
   }
 
+  .minigame {
+    padding-top: 96px;
+  }
+
+  .minigame__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 72px;
+  }
+
+  .minigame__content-block {
+    background-color: #FFFFFF;
+    width: 1200px;
+    height: 500px;
+    gap: 0px;
+    border-radius: 30px;
+    opacity: 0px;
+    box-shadow: 0px 20px 67px -12px #00000021;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .minigame__content-img {
+    width: 600px;
+    height: 500px;
+    gap: 0px;
+    border-radius: 30px;
+    opacity: 0px; 
+  }
+
+  .minigame__content-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: left;
+    color: #202027;
+    padding-bottom: 24px;
+  }
+
+  .minigame__content-paragraf {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #202027;
+    padding-bottom: 36px;
+  }
+
+  .minigame-button1 {
+    width: 247px;
+    height: 66px;
+    padding: 16px 28px 16px 28px;
+    gap: 10px;
+    border-radius: 60px;
+    opacity: 0px;
+    background-color: #202027;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .minigame-button1:hover{
+    color: #202027;
+    background-color: transparent;
+  }
+
+  .minigame__content-text {
+    padding-left: 48px;
+    padding-top: 48px;
+  }
+
   footer {
     background-color: #BDED35;
-    height: 150px;
+   height: 150px;
     gap: 0px;
     opacity: 0px;
     display: flex;
@@ -274,3 +363,9 @@
   }
 
   
+
+  
+
+
+
+
