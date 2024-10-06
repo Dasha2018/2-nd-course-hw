@@ -1,0 +1,138 @@
+@media  (max-width: 1023px) {
+
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .top {
+        height: 700px;
+        background: url(pict/Topstar.svg) no-repeat top 0px right 0px,
+        url(pict/Star4.svg) no-repeat 70% 90%, 
+        url(pict/Star5.svg) no-repeat 60% 80%,
+        url(pict/Star2.svg) no-repeat 5% 16%, 
+        url(pict/Star3.svg) no-repeat 15% 7%, 
+        url(pict/Top.jpg) center/cover no-repeat;
+      }
+      
+      .top__content {
+        width: 600px;
+        height: 244px;
+        gap: 24px;
+        opacity: 0px;
+        padding-top: 250px;
+      }
+
+    .top__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .creepingline-paragraf {
+        font-size: 16px;
+        line-height: 8px;
+        
+      }
+
+      .creepingline-svg {
+        width: 16px;
+        height: 16px;
+        gap: 0px;
+        opacity: 0px;
+      }
+
+      .creepingline {
+        padding: 17px 29px 17px 29px;
+      }
+
+      .game__about {
+        
+        padding-top: 64px;
+        padding-bottom: 72px;
+    }
+
+    .game__content-block1 {
+        width: 340px;
+        height: 432px;
+        margin-bottom: 32px;
+        
+        
+      }
+
+      .game__content-block2 {
+        width: 340px;
+        height: 432px;
+        margin-bottom: 32px;
+      }
+
+      .game__content-block3 {
+        width: 340px;
+        height: 432px;
+      }
+
+      .game__content-block4 {
+        width: 340px;
+        height: 432px;
+      }
+
+      .game__content-img {
+        width: 340px;
+        height: 280px;
+      }
+      .game__content-block1023 {
+        display: flex;
+        gap: 32px;
+      }
+    
+
+      .game__content-paragraf {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    
+      .game__content-title {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      .game__content-text {
+        padding: 24px 16px 24px 24px;
+      }
+
+      
+
+    .minigame__content-block {
+        width: 680px;
+        height: 300px;
+      }
+    
+      .minigame__content-img {
+        width: 340px;
+        height: 300px;
+      }
+
+      .minigame__content-text {
+        padding-top: 24px;
+      }
+    
+      .minigame__content-title {
+        font-size: 24px;
+        line-height: 32px;
+        padding-top: 8px;
+        padding-bottom: 16px;
+      }
+    
+      .minigame__content-paragraf {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 16px;
+      }
+
+      .minigame-button1 {
+        width: 240px;
+        height: 56px;
+        padding: 10px 20px 10px 20px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+}

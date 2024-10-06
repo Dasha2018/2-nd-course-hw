@@ -80,3 +80,41 @@ function startGame3() {
 
 }
 button3.addEventListener("click", startGame3);
+
+
+const button4 = document.querySelector('#RockPaperScissors');
+
+function startGame4() {
+
+    alert('Сыгрвем в Камень, Ножницы, Бумага!');
+
+    const selection = ["камень", "ножницы", "бумага"];
+
+    let userSelection = prompt("Выберите 'камень', 'ножницы' или 'бумага':");
+    userSelection = userSelection.toLowerCase();
+
+    let computerSelection = selection[Math.floor(Math.random() * selection.length)];
+
+    if (userSelection === computerSelection) {
+        alert("Ничья!");
+    } else if (userSelection == "камень") {
+        if (computerSelection == "ножницы") {
+            alert("Вы выиграли!");
+        } else {
+            alert("Компьютер выиграл!");
+        }
+    } else if (userSelection == "бумага") {
+        if (computerSelection == "камень") {
+            alert("Вы выиграли!");
+        } else {
+            alert("Компьютер выиграл!");
+        }
+    } else { // userChoice == "ножницы"
+        if (computerSelection == "бумага") {
+            alert("Вы выиграли!");
+        } else {
+            alert("Компьютер выиграл!");
+        }
+    }
+}
+button4.addEventListener("click", startGame4);
