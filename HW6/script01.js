@@ -39,15 +39,19 @@ console.log(arr5);
 
 //6
 
-let arr6 = [9, 8, 7, 'a', 6, 5];
+/* let arr6 = [9, 8, 7, 'a', 6, 5];
 arr6.sort();
 console.log(arr6);
 const filteredArr6 = arr6.filter(arr6 => arr6 != 'a');
-console.log(filteredArr6);
+console.log(filteredArr6); */
+
+let arr6 = [9, 8, 7, 'a', 6, 5];
+arr6 = arr6.filter(el => typeof el === 'number').sort();
+console.log(arr6);
 
 //7
 
-const arr7 = [9, 8, 7, 6, 5];
+/* const arr7 = [9, 8, 7, 6, 5];
 const userGuess = +prompt('Введите число');
 if (arr7.includes(userGuess)) {
     alert('Угадал!');
@@ -55,14 +59,28 @@ if (arr7.includes(userGuess)) {
 else {
     alert('Не угадал!');
 }
-
+ */
+const arr7 = [9, 8, 7, 6, 5];
+const userGuess = Number(prompt('Введите число'));
+if (!isNaN(userGuess)) {
+    if (arr7.includes(userGuess)) {
+        alert('Угадал!');
+    } else {
+        alert('Не угадал!');
+    }
+} else {
+    alert('Введите корректное число');
+}
 
 //8
-let arr8 = 'abcdef';
+/* let arr8 = 'abcdef';
 arr8 = arr8.split('');
 console.log(arr8);
 arr8.reverse();
 arr8 = arr8.join('');
+console.log(arr8); */
+
+let arr8 = 'abcdef'.split('').reverse().join('');
 console.log(arr8);
 
 
