@@ -118,3 +118,104 @@ function startGame4() {
     }
 }
 button4.addEventListener("click", startGame4);
+
+
+
+const Randomcolor = document.getElementById('random');
+
+
+function changeColor() {
+    // Генерируем случайное число
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+
+
+    Randomcolor.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+}
+document.querySelector('#Randomcolor').addEventListener('click', changeColor);
+
+
+
+document.getElementById("TopButton").addEventListener("click", function () {
+    var start = document.querySelector("#start"); // ID элемента, куда вы хотите проскроллить
+    window.scrollTo({
+        top: start.offsetTop,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("section1").addEventListener("click", function () {
+    var section1 = document.querySelector("#msection1"); // ID элемента, куда вы хотите проскроллить
+    window.scrollTo({
+        top: section1.offsetTop,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("section2").addEventListener("click", function () {
+    var section2 = document.querySelector("#msection2"); // ID элемента, куда вы хотите проскроллить
+    window.scrollTo({
+        top: section2.offsetTop,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("section3").addEventListener("click", function () {
+    var section3 = document.querySelector("#msection3"); // ID элемента, куда вы хотите проскроллить
+    window.scrollTo({
+        top: section3.offsetTop,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("section4").addEventListener("click", function () {
+    var section4 = document.querySelector("#msection4"); // ID элемента, куда вы хотите проскроллить
+    window.scrollTo({
+        top: section4.offsetTop,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("section5").addEventListener("click", function () {
+    var section5 = document.querySelector("#msection5"); // ID элемента, куда вы хотите проскроллить
+    window.scrollTo({
+        top: section5.offsetTop,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("section6").addEventListener("click", function () {
+    var section6 = document.querySelector("#msection6"); // ID элемента, куда вы хотите проскроллить
+    window.scrollTo({
+        top: section6.offsetTop,
+        behavior: "smooth"
+    });
+});
+
+
+
+ // Получаем контейнер для бегущей строки
+/* let creepingline = document.getElementById('#CreepingLine');
+let text = creepingline.innerHTML;
+
+
+
+// Определяем скорость движения строки (в пикселях за секунду)
+const speed = 50;
+
+// Функция для перемещения текста
+function moveText() {
+  // Получаем текущую позицию текста
+  let currentPosition = creepingline.scrollLeft;
+
+  // Перемещаем текст на один пиксель вправо
+  currentPosition += speed;
+
+  // Обновляем позицию текста в контейнере
+  creepingline.scrollLeft = currentPosition;
+}
+
+// Запускаем функцию каждые 10 миллисекунд
+setInterval(moveText, 10);  */
+
