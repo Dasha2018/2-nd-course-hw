@@ -1,0 +1,183 @@
+@media  (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .top__title {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+      }
+
+      .top__paragraf {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: center;
+        padding-top: 24px;
+    }
+    .top__paragraf-span {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        text-align: center;
+  
+      }
+      .top__button {
+        width: 285px;
+        height: 55px;
+        padding: 16px 28px 16px 28px;
+        gap: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 72px;
+        margin-left: 30px;
+        margin-bottom: 131px;
+        background-color: #202027;
+        color: #FFFFFF;
+      }
+
+      .top__button:hover {
+        background-color: #202027;
+        color: #FFFFFF;
+      }
+
+      .top{
+        background: none;
+        display: flex;
+        flex-direction: column;
+      }
+      .top__content {
+        padding-top: 147px;
+        max-width: 343px;
+        padding-left: 1px;
+      }
+
+      .top-mobile {
+        height: auto;
+        background: url(pict/mobilestar.svg) no-repeat top 0px right 0px,
+        url(pict/mStar3.svg) no-repeat 24% 9%,
+        url(pict/mStar2.svg) no-repeat 9% 15%,
+        url(pict/mStar4.svg) no-repeat 98% 96%,
+        url(pict/mStar5.svg) no-repeat 89% 88%,
+        url(pict/Top.jpg) center/cover no-repeat;
+      }
+
+     
+
+    .game {
+        display: none;
+    }
+
+    .game-mobile-title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: left;
+        color: #FFFFFF;
+        margin-top: 48px;
+        
+    }
+
+    .game-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #202027;
+    }
+
+    .game-mobile-content{
+     padding-top: 72px;
+    
+    }
+    
+    
+
+
+    .game-mobile-block {
+        border-radius: 30px;
+        opacity: 0px;
+        box-shadow: 0px 11.44px 38.34px -6.87px #00000021;
+        transition:  0.5s;
+        background-color: #FFFFFF;
+        margin-bottom: 72px;
+        
+        
+    }
+
+    .game-mobile-block{
+        transform: scale(1.07);
+    }
+
+    .game-mobile-text {
+        padding: 29px 29px 32px 29px;
+    }
+
+    .game-mobile-titleblock {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: left;
+        color: #202027;
+    }
+
+    .game-mobile-paragraf {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+        color: #000000;
+        margin-top: 16px;
+
+    }
+
+    .game-mobile-img {
+        width: 100%;
+        height: 284px;
+        gap: 0px;
+        border-radius: 30px;
+        opacity: 0px;
+      }
+
+      .game-mobile-button {
+        width: 283px;
+        height: 55px;
+        padding: 16px 28px 16px 28px;
+        gap: 10px;
+        border-radius: 60px;
+        border: 1px;
+        opacity: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+        color:#FFFFFF;
+        background-color: #202027;
+        
+      }
+
+      .mobile-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+      }
+
+      .minigame{
+        display: none;
+      }
+
+      .footer {
+       height: 100px;
+      }
+
+      .footer-title{
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+      }
+}
