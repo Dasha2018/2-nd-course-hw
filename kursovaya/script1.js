@@ -11,17 +11,73 @@ function startGame() {
     let numberofguess = 0;
     while (Guessthenumber != number) {
         if (Guessthenumber > number) {
-            Guessthenumber = prompt('Много. Попробу ещё раз.');
-            numberofguess = numberofguess + 1;
+            if (Guessthenumber !== null) {
+                Guessthenumber = prompt('Много. Попробу ещё раз.');
+                numberofguess = numberofguess + 1;
+            }
         }
         if (Guessthenumber < number) {
-            Guessthenumber = prompt('Мало. Попробу ещё раз.');
-            numberofguess = numberofguess + 1;
+            if (Guessthenumber !== null) { // Проверяю на нажатие кнопки «Отмена»
+                Guessthenumber = prompt('Мало. Попробу ещё раз.');
+                numberofguess = numberofguess + 1;
+            }
         }
     }
     alert('Число угадано ' + number + '. Число угадано за ' + numberofguess + ' попытки.');
 }
 button.addEventListener("click", startGame);
+
+
+
+
+const button1 = document.querySelector('#Simplearithmetic');
+
+
+function createTask() {
+    alert('Решите простые арифметические задачи и проверьте свои знания!');
+
+    function addition(a, b) {
+        return a + b;
+    }
+
+    function subtraction(a, b) {
+        return a - b;
+    }
+
+    function multiplication(a, b) {
+        return a * b;
+    }
+
+    function division(a, b) {
+        if (b === 0) {
+            return 'Деление на ноль не допускается';
+        } else {
+            return a / b;
+        }
+    }
+
+    let signs = ['+', '-', '*', '/'];
+    let index = Math.floor(Math.random() * 4);
+
+    let a = Math.floor(Math.random() * 10);
+    let b = Math.floor(Math.random() * 10);
+    let operation = signs[Math.floor(Math.random() * signs.length)];
+    alert(`${a}  ${operation} ${b} = `);
+    let answer = prompt(`Напиши ответ: `);
+
+    if (answer == addition(a, b)) {
+        alert(`Верно`);
+    } else if (answer == subtraction(a, b)) {
+        alert(`Верно`);
+    } else if (answer == multiplication(a, b)) {
+        alert(`Верно`);
+    } else if (answer == division(a, b)) {
+        alert(`Верно`);
+    } else {
+        alert(`Не верно`);
+    }
+}
+button1.addEventListener("click", createTask);
 
 
 
@@ -59,24 +115,28 @@ function startGame3() {
         }
     ];
 
+    let score = 0;
+
     for (let i = 0; i < quiz.length; i++) {
         const question = quiz[i].question;
         const options = quiz[i].options;
         const correctAnswer = quiz[i].correctAnswer;
         alert(question);
         let userAnswer = prompt(options);
-
+        let score = 0;
         checkAnswer({ question, options, correctAnswer }, userAnswer);
     }
 
     function checkAnswer(quiz, userAnswer) {
         if (userAnswer == quiz.correctAnswer) {
+            score++;
             alert("Правильный ответ!");
         } else {
             alert("Неправильный ответ!");
         }
-
     }
+    alert(`Вы ответили правильно на ${score} вопросов.`);
+
 
 }
 button3.addEventListener("click", startGame3);
@@ -116,6 +176,7 @@ function startGame4() {
             alert("Компьютер выиграл!");
         }
     }
+    alert("Выбор компьютера " + computerSelection + ".");
 }
 button4.addEventListener("click", startGame4);
 
@@ -138,15 +199,26 @@ document.querySelector('#Randomcolor').addEventListener('click', changeColor);
 
 
 document.getElementById("TopButton").addEventListener("click", function () {
-    var start = document.querySelector("#start"); // ID элемента, куда вы хотите проскроллить
+    let start = document.querySelector("#start"); // ID элемента, куда вы хотите проскроллить
     window.scrollTo({
         top: start.offsetTop,
         behavior: "smooth"
     });
 });
 
-document.getElementById("section1").addEventListener("click", function () {
-    var section1 = document.querySelector("#msection1"); // ID элемента, куда вы хотите проскроллить
+/* document.getElementById("Topbuttonmobile").addEventListener("click", function () {
+    let start = document.querySelector("#minigamemobile"); // ID элемента, куда вы хотите проскроллить
+    window.scrollTo({
+        top: start.offsetTop,
+        behavior: "smooth"
+    });
+});  */
+
+
+
+
+/* document.getElementById("section1").addEventListener("click", function () {
+    let section1 = document.querySelector("#msection1"); // ID элемента, куда вы хотите проскроллить
     window.scrollTo({
         top: section1.offsetTop,
         behavior: "smooth"
@@ -154,7 +226,7 @@ document.getElementById("section1").addEventListener("click", function () {
 });
 
 document.getElementById("section2").addEventListener("click", function () {
-    var section2 = document.querySelector("#msection2"); // ID элемента, куда вы хотите проскроллить
+    let section2 = document.querySelector("#msection2"); // ID элемента, куда вы хотите проскроллить
     window.scrollTo({
         top: section2.offsetTop,
         behavior: "smooth"
@@ -162,7 +234,7 @@ document.getElementById("section2").addEventListener("click", function () {
 });
 
 document.getElementById("section3").addEventListener("click", function () {
-    var section3 = document.querySelector("#msection3"); // ID элемента, куда вы хотите проскроллить
+    let section3 = document.querySelector("#msection3"); // ID элемента, куда вы хотите проскроллить
     window.scrollTo({
         top: section3.offsetTop,
         behavior: "smooth"
@@ -170,7 +242,7 @@ document.getElementById("section3").addEventListener("click", function () {
 });
 
 document.getElementById("section4").addEventListener("click", function () {
-    var section4 = document.querySelector("#msection4"); // ID элемента, куда вы хотите проскроллить
+   let section4 = document.querySelector("#msection4"); // ID элемента, куда вы хотите проскроллить
     window.scrollTo({
         top: section4.offsetTop,
         behavior: "smooth"
@@ -178,7 +250,7 @@ document.getElementById("section4").addEventListener("click", function () {
 });
 
 document.getElementById("section5").addEventListener("click", function () {
-    var section5 = document.querySelector("#msection5"); // ID элемента, куда вы хотите проскроллить
+    let section5 = document.querySelector("#msection5"); // ID элемента, куда вы хотите проскроллить
     window.scrollTo({
         top: section5.offsetTop,
         behavior: "smooth"
@@ -186,36 +258,12 @@ document.getElementById("section5").addEventListener("click", function () {
 });
 
 document.getElementById("section6").addEventListener("click", function () {
-    var section6 = document.querySelector("#msection6"); // ID элемента, куда вы хотите проскроллить
+    let section6 = document.querySelector("#msection6"); // ID элемента, куда вы хотите проскроллить
     window.scrollTo({
         top: section6.offsetTop,
         behavior: "smooth"
     });
-});
+}); */
 
 
-
- // Получаем контейнер для бегущей строки
-/* let creepingline = document.getElementById('#CreepingLine');
-let text = creepingline.innerHTML;
-
-
-
-// Определяем скорость движения строки (в пикселях за секунду)
-const speed = 50;
-
-// Функция для перемещения текста
-function moveText() {
-  // Получаем текущую позицию текста
-  let currentPosition = creepingline.scrollLeft;
-
-  // Перемещаем текст на один пиксель вправо
-  currentPosition += speed;
-
-  // Обновляем позицию текста в контейнере
-  creepingline.scrollLeft = currentPosition;
-}
-
-// Запускаем функцию каждые 10 миллисекунд
-setInterval(moveText, 10);  */
 
